@@ -44,7 +44,7 @@
 
 <h2 id='dev-environment'>Среда разработки</h2>
 В качестве среды разработки Вы можете использовать любой удобный редактор кода. Я использую 
-[VSCode](https://code.visualstudio.com/), а так же плагины:
+<a href="https://code.visualstudio.com/">VSCode</a>, а так же плагины:
 
 - LiveServer - для удобной вёрcтки и разработки.
 - Prettier - для форматирования JavaScript
