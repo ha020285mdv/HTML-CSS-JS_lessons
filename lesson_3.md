@@ -683,8 +683,8 @@ let
   let win = score > 100 ? 'Yes' : 'No'; //значение win - 'Yes'
   
   ```
-
-# JS Lesson 2
+<hr/>
+<hr/>
 
 # Преобразование типов
 
