@@ -4,7 +4,6 @@
 1. [Валидатор](https://validator.w3.org/)
 2. [Селекторы](https://code.tutsplus.com/ru/tutorials/the-30-css-selectors-you-must-memorize--net-16048)
 
-
 ## План
 1. [Работа с цветом](#colors)
 2. [Псевдоклассы и псевдоэлементы](#pseudo)
