@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Picture</title>
+  <style>
+    .content {
+      display: flex;
+      background-color: azure;
+      justify-content: center;
+    }
+
+    .image-wrapper {
+      text-align: center;
+    }
+
+    .image-wrapper img {
+      max-width: 100%;
+    }
+
+    .pict {
+      display: block;
+      margin: 0 auto;
+
+    }
+  </style>
+</head>
+
+<body>
+  <div class="content">
+    <div class="image-wrapper">
+      <picture>
+        <source srcset="img/xxl.jpeg" type="image/jpeg" media="(min-width:1920px)" />
+        <source srcset="img/large.jpeg" type="image/jpeg" media="(min-width:1200px)" />
+        <source srcset="img/big.jpeg" type="image/jpeg" media="(min-width:768px)" />
+        <source srcset="img/medium.jpeg" type="image/jpeg" media="(min-width:480px)" />
+        <source srcset="img/small.jpeg" type="image/jpeg" media="(min-width:300px)" />
+        <img src="img/xxl.jpeg" alt="" class="pict" />
+      </picture>
+    </div>
+  </div>
+</body>
+
+</html>

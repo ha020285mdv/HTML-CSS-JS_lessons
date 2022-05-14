@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    input {
+      display: block;
+      width: 200px;
+    }
+
+    input::placeholder {
+      color: blue
+    }
+
+    input:focus {
+      border: 2px solid red;
+    }
+
+    input[type='radio'] {
+      display: inline;
+    }
+
+    input[type='radio']:checked {
+      background-color: red;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- <form action="https://jsonplaceholder.typicode.com/posts/" method="post" enctype="multipart/form-data">
+    <br>
+    <label for="">Input radios:</label>
+    <input type="radio" name="radioGroup" value="1" id="" required>
+    <input type="radio" name="radioGroup" value="235" id="">
+    <input type="password" name="" id="" maxlength="2" autofocus>
+    <br>
+    <label for="url">Input url</label>
+    <input type="url" name="url" id="url" placeholder="https://example.com" pattern="https://.*" size="30" required>
+
+    <input type="submit" value="Send">
+  </form>
+
+
+  <form action="https://jsonplaceholder.typicode.com/posts/" method="post">
+    <input type="text" name="username" id="" required placeholder="Введите имя" autofocus />
+    <br />
+    <input type="password" name="password" id="password" maxlength="8" minlength="4" required />
+    <br />
+    <label for="sex">
+      Пол
+    </label>
+    <br>Мужской <input type="radio" name="sex" value="male">
+    Женский
+    <input type="radio" name="sex" value="female">
+    <br />
+
+    <button type="submit">Отправить</button>
+    <button type="reset">Обнулить</button>
+  </form> -->
+  <form action="#" method="get">
+    <input type="text" name="title" id="" tabindex="1" autofocus>
+    <input type="text" name="body" id="" required tabindex="3">
+    <input type="text" name="userId" id="" tabindex="2">
+    <input type="password" name="password" id="" tabindex="4">
+
+    <textarea name="textarea" id="" cols="20" rows="10" placeholder="Placeholder"></textarea>
+    <button type="submit" tabindex="-1">Отправить</button>
+  </form>
+</body>
+
+</html>
