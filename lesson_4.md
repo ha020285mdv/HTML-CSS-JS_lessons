@@ -674,7 +674,11 @@ showFullName.call(user, 'firstName', 'surname');
 showFullName.apply(user, ['firstName', 'surname']);
 ```
 
+<h1>Пауза</h1> 
+
+
 # Глобальные объекты
+
 
 В браузере это объект window
 
@@ -922,6 +926,8 @@ const person = {
 };
 console.log(Object.values(person)); // ['Petya', 20]
 ```
+
+<h1>Пауза</h1>
 
 # Конструкторы, создание объектов через "new"
 
