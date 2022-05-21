@@ -235,6 +235,8 @@ let divs = document.getElementsByTagName('div');
 
 - Node.ELEMENT_NODE, номер которого равен 1. Элементам этого типа соответствуют HTML-теги.
 
+[Список типов тут](https://developer.mozilla.org/ru/docs/Web/API/Node/nodeType)
+
 Иногда полезен еще тип Node.TEXT_NODE, который равен 3. Это текстовые элементы.
 
 # Изменение документа
@@ -404,7 +406,7 @@ element.setAttribute(name, value);
 - name - имя атрибута (строка).
 - value  - значение атрибута.
 
-В следующем примере, setAttribute() используется, чтобы установить атрибут disabled  кнопки <button>, делая её отключенной.
+В следующем примере, setAttribute() используется, чтобы установить атрибут disabled  кнопки <'button>, делая её отключенной.
 
 ```
 <button>Hello World</button>
@@ -415,7 +417,7 @@ b.setAttribute("disabled", "disabled");
 ```
 
 
-События:
+# События:
 
 Каждый элемент DOM содержит множество свойств on..., в которые вы можете занести тот или иной обработчик события:
 
@@ -435,9 +437,9 @@ b.setAttribute("disabled", "disabled");
 
 - События на элементах управления:
 
-**submit** – пользователь отправил форму <form>.
+**submit** – пользователь отправил форму `<form>`.
 
-**focus** – пользователь фокусируется на элементе, например нажимает на <input>.
+**focus** – пользователь фокусируется на элементе, например нажимает на `<input>`.
 
 - Клавиатурные события:
 
@@ -617,12 +619,6 @@ document.addEventListener("DOMContentLoaded", function() {
 - event.target всегда будет указывать на элемент, который это событие вызвал
 
 
-
-# Задание на сейчас
-
-Добавьте JavaScript к кнопке button, чтобы при нажатии элемент <div id="text"> исчезал
-
-
 # Формы, элементы управления
 
 События: change, input, cut, copy, paste
@@ -631,7 +627,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 Событие change срабатывает по окончании изменения элемента.
 
-Для текстовых <input> это означает, что событие происходит при потере фокуса.
+Для текстовых `<input>` это означает, что событие происходит при потере фокуса.
 
 Пока мы печатаем в текстовом поле в примере ниже, событие не происходит.
 
@@ -712,7 +708,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 Есть два основных способа отправить форму:
 
-- Первый – нажать кнопку <input type="submit"> или <input type="image">
+- Первый – нажать кнопку `<input type="submit">` или `<input type="image">`
 
 - Второй – нажать Enter, находясь на каком-нибудь поле
 
@@ -721,7 +717,7 @@ document.addEventListener("DOMContentLoaded", function() {
 В примере ниже:
 
 1. Перейдите в текстовое поле и нажмите Enter.
-2. Нажмите <input type="submit">.
+2. Нажмите `<input type="submit">`.
 
 Оба действия показывают alert и форма не отправится благодаря return false:
 
@@ -864,7 +860,7 @@ elem.addEventListener(..., true)
 
 Для этого нужно вызвать метод event.stopPropagation().
 
-Например, здесь при клике на кнопку <button> обработчик body.onclick не сработает:
+Например, здесь при клике на кнопку `<button>` обработчик body.onclick не сработает:
 
 ```
 <body onclick="alert(`сюда всплытие не дойдёт`)">
