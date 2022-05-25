@@ -103,7 +103,7 @@ alert( document.body.previousSibling ); // HTMLHeadElement
 
 Промис - это объект, у которого есть 3 состояния:
 
-- Panding - ожидание
+- Pending - ожидание
 
 - Resolve - выполнено успешно
 
@@ -308,7 +308,7 @@ promise
 const btn = document.getElementById('btn');
 const server = [{
     name: 'Vlad',
-    surName: 'Rusanov',
+    surName: 'Ivanov',
     eyeColour: 'eyeColour'
 }, {
     name: 'Vova',
@@ -358,10 +358,13 @@ const responce = getDataFromServer();
 
 И наше сообщение (500 ServerError) мы можем получить в первом аргументе коллбэк функции .catch
 
+<h1>Pause</h1>
 
 # Заголовки запроса (headers)
 
 Что это?
+
+Большой список [тут](https://developer.mozilla.org/ru/docs/Web/HTTP/Headers)
 
 Это какая-то глвная информация в запросе. С помощью хедеров мы устанавливаем какую-то важную информация для сервера:
 
